@@ -1,0 +1,74 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "homepage": "web/build",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "fortawesome/react-fontawesome",
+    "@mantine/core": "^6.0.9",
+    "@mantine/dates": "^6.0.16",
+    "@mantine/form": "^6.0.16",
+    "@mantine/hooks": "^6.0.9",
+    "@mantine/modals": "^6.0.9",
+    "@mantine/notifications": "^6.0.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-syntax-highlighter": "^15.5.7",
+    "dayjs": "^1.11.9",
+    "emoji-picker-react": "^4.4.9",
+    "moment": "^2.29.4",
+    "prettier": "^3.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "react-markdown": "^8.0.7",
+    "react-scripts": "^5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^3.0.1",
+    "typescript": "^5.1.6",
+    "web-vitals": "^3.3.2"
+  },
+  "scripts": {
+    "start": "cross-env PUBLIC_URL=/ craco start",
+    "start:game": "cross-env IN_GAME_DEV=1 craco start",
+    "build": "rimraf build && craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "cross-env": "^7.0.3",
+    "rimraf": "^5.0.1"
+  }
+}
